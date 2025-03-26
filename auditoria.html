@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/070428bd88.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="src/images/logo.png">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>ZBot</title>
+    <style>
+        #loading-icon {
+            display: none; /* Esconde o ícone de carregamento inicialmente */
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="msger">
+        <header class="msger-header">
+            <div class="msger-header-title">
+                <a href="https://github.com/GustavoDiasdeOliveira" title="Github" target="_blank"><i class='bx bxl-github'></i></a>
+                <img src="src/images/zukkin.png">
+                <!-- Botão com ícone de voltar -->
+                <button class="back-btn" onclick="goBack()">
+                    <i id="back-icon" class='bx bx-home '></i>
+                    <!-- Ícone de loading (inicialmente oculto) -->
+                    <i id="loading-icon" class="bx bx-loader-alt bx-spin"></i>
+                </button>
+            </div><!-- msger-header-title-->
+        </header><!-- msger-header-->
+        
+        <main class="msger-chat">
+            <!-- A conversa será automaticamente carregada via JavaScript -->
+        </main><!-- msger-chat-->
+
+        <form class="msger-inputarea">
+            <input type="text" class="msger-input" placeholder="Digite sua mensagem...">
+            <button type="submit" class="msger-send-btn"><i class="fa fa-paper-plane"></i></button>
+        </form>
+    </section><!-- msger -->
+
+    <script src="src/js/varredura.js"></script>
+
+    <script>
+        function goBack() {
+            // Altera o ícone de voltar para o ícone de carregamento
+            document.getElementById('back-icon').style.display = 'none'; // Esconde o ícone de voltar
+            document.getElementById('loading-icon').style.display = 'inline-block'; // Mostra o ícone de carregamento
+
+            // Aguarda 3 segundos antes de redirecionar
+            setTimeout(function() {
+                window.location.href = "index.html"; // Redireciona para a página teste.html
+            }, 3000); // Tempo de 3 segundos
+        }
+    </script>
+
+</body>
+</html>
