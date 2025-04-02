@@ -184,7 +184,7 @@ function handleUserChoice(choice) {
         Exemplo: <b>IOG DANONE 160G.</b><br><br>
         Clique <a href='https://gustavodiasdeoliveira.github.io/abreviador/' target='_blank'>aqui</a> para abrir o abreviador do Team Virtual.`;
         break;
-
+        
       case "4":
       case normalizedChoice.includes("Itens de embalagem promocional") && normalizedChoice:
         response = `🔎 <b>Produtos com embalagem promocional</b> possuem diferenças importantes: <b>UN (unidade) e LV+ PG- (leve mais, pague menos)</b> 
