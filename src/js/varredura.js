@@ -182,7 +182,7 @@ function handleUserChoice(choice) {
         response = `🔎 Muitos produtos têm abreviações como <b>IOG</b> (Iogurte) ou <b>REQ</b> (Requeijão).<br><br>
         📌 <b>Dica:</b> Use abreviações para agilizar a pesquisa e filtre por marca e peso.<br><br>
         Exemplo: <b>IOG DANONE 160G.</b><br><br>
-        Clique 'aqui' para abrir o abreviador do Team Virtual.`;
+        Clique <a href='https://gustavodiasdeoliveira.github.io/abreviador/' target='_blank'>aqui</a> para abrir o abreviador do Team Virtual.`;
         break;
 
       case "4":
